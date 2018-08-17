@@ -2,7 +2,7 @@
 published: true
 # Custom Page Variables
 # ─────────────────────
-title: Digital UI Style Guide
+title: Style Guide
 ---
 [Terug]({{ site.baseurl }}{% link pages/index.html %}){:.btn.btn-primary.mt-1}
 
