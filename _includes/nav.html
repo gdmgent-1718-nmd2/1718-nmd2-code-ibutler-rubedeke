@@ -1,5 +1,5 @@
 {%- assign nodes = site.pages | where: 'layout', 'default' | sort: 'title' %}
-<nav class="navbar navbar-expand-lg navbod">
+<nav class="navbar navbar-expand-lg navbar-dark navbod">
     <!-- websitelogo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
         <img src="{{ site.baseurl }}/img/iRankU_logo.png" alt="iRankU_logo" width="100px">
@@ -13,7 +13,7 @@
 
     <!-- hoofdnavigatie -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto navfont">
             {% assign links = site.data.navigation %} {% for link in links %} {% assign class = nil %} {% if link.url contains page.url
             %} {% assign class = ' active' %} {% endif %} {% if link.sublinks %}
             <li class="nav-item dropdown {{ class }}">
@@ -34,5 +34,6 @@
                 <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
             </li>
             {% endif %} {% endfor %}
+        </ul>
     </div>
 </nav>
