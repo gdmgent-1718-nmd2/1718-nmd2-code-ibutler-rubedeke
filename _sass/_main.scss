@@ -6,16 +6,13 @@
    BODY
 ============================================== */
 
+html {
+  min-height: 100%;
+}
+
 body {
+  min-height: 100vh;
   background-color: #000;
-}
-
-body {
-  width: 100%;
-  height: 70%;
-}
-
-body {
   background-image: radial-gradient(ellipse at top, #706E6E, transparent);
 }
 
@@ -70,11 +67,16 @@ a:hover {
   color: #fff;
   font-family: 'Luckiest Guy', cursive;
   font-weight: bold;
+  font-size: 14pt;
   text-align: center;
 }
 
 .navbod {
   background-color: #EAB818;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* ==============================================
@@ -84,10 +86,12 @@ a:hover {
 .footer {
   margin-top: 50px;
   background-color: #EAB818;
+  bottom: 0;
 }
 
 .footerico {
   margin: 0 3px 5px 0;
+  color: rgba(255, 255, 255, 1);
   filter: drop-shadow(2px 2px 0 #000);
 }
 
@@ -102,20 +106,8 @@ a:hover {
    INDEX
 ============================================== */
 
-.floaty {
-  position: relative;
-  text-align: center;
-}
-
 .spacebetween {
   margin: 10px 0 10px 0;
-}
-
-.intro {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  text-align: left;
 }
 
 .overcentered {
