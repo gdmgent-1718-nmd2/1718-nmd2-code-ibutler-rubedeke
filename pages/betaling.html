@@ -6,69 +6,74 @@ permalink: detailpagina/checkout/betaling
 title: Payment
 ---
 <div class="container">
-
-        <h3 class="text-uppercase spacebetween blue bold">Checkout</h3>
+        <div class="row justify-content-center spacebetween">
+                <h2>checkout</h2>
+        </div>
 
         <nav aria-label="breadcrumb" role="navigation">
                 <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item">
-                                <a href="{{ site.baseurl }}/detailpagina/checkout/details.html">Your details</a>
+                        <li class="breadcrumb-item" aria-current="page">
+                                Your details
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">
+                        <li class="breadcrumb-item breadcrumb-active" aria-current="page">
                                 Payment
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page">
+                                Order complete
                         </li>
                 </ol>
         </nav>
 
-        <h4 class="text-uppercase spacebetween blue bold">Payment</h4>
-
-        <div class="pframe row justify-content-center">
-                <p class="col-12">Klik hieronder op de gewenste betaalwijze</p>
-                <div class="col-6">
-                        <p class="text-right">
-                                Referentie van de bestelling:
-                                <br> Totale kostprijs:
-                                <br> Begunstigde:
-                        </p>
+        <div class="row justify-content-center spacebetween">
+                <div class="col-12 col-md-6">
+                        <h3 class="spacebetween">Your order</h3>
+                        <div class="payments">
+                                <h3 class="blacktext text-left">You're paying for:</h3>
+                                <p class="blacktext text-left">Fortnite - PS4 - 60 Ranks</p>
+                                <h3 class="blacktext text-left">Total:</h3>
+                                <p class="blacktext text-left">All applicable VAT included:</p>
+                                <p class="blacktext text-left">30 EUR</p>
+                                <h3 class="blacktext text-left">I accept:</h3>
+                                <div class="row justify-content-between">
+                                        <div class="col-3"><img src="{{ site.baseurl }}/img/maestro.png" width="70%" alt="maestro"></div>
+                                        <div class="col-3"><img src="{{ site.baseurl }}/img/mastercard.png" width="70%" alt="mastercard"></div>
+                                        <div class="col-3"><img src="{{ site.baseurl }}/img/mistercash.png" width="70%" alt="mistercash"></div>
+                                        <div class="col-3"><img src="{{ site.baseurl }}/img/visa.png" width="70%" alt="visa"></div>
+                                </div>
+                        </div>
                 </div>
+                <div class="col-12 col-md-6">
+                        <h3 class="spacebetween">Pay with</h3>
+                        <div class="form-row">
+                                <div class="form-group col-12">
+                                        <select id="inputState" class="form-control">
+                                                <option selected>
+                                                        <h6>SELECT A PAYMENT OPTION</h6>
+                                                </option>
+                                                <option>Maestro</option>
+                                                <option>Mastercard</option>
+                                                <option>Mistercard</option>
+                                                <option>Visa</option>
+                                        </select>
+                                </div>
+                        </div>
+                        <p class="text-justify">You will recieve a mail with details and contact information for trading
+                                account information, as soon as the payment has been transfered.</p>
+                        <div class="row justify-center-between">
+                                <div class="col-12 col-md-6">
+                                        <a class="btn btn-warning btn-block" href="{{ site.baseurl }}/detailpagina/checkout/details.html"><h3>Cancel</h3></a>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                        <a class="btn btn-warning btn-block" href="{{ site.baseurl }}/detailpagina/checkout/bedankt.html"><h3>Pay</h3></a>
+                                </div>
 
-                <div class="col-6">
-                        <p class="text-left">
-                                R4WEB00515862
-                                <br> 15.00 EUR
-                                <br> iRent
-                        </p>
+
+
+                        </div>
+
+
                 </div>
         </div>
 
-        <div class="pframe row justify-content-center">
-                <p class="col-12">Klik hieronder op de gewenste betaalwijze</p>
-                <div class="col-6">
-                        <p class="text-right">
-                                VISA
-                                <br> Master Card
-                                <br> Bancontact: Master Cash
-                                <br> Maestro
-                        </p>
-                </div>
-
-                <div class="col-6">
-                        <a href="{{ site.baseurl }}/detailpagina/checkout/bedankt.html">
-                                <img src="{{ site.baseurl }}/img/visa.jpg" alt="VISA" height="25px">
-                        </a>
-                        <br>
-                        <a href="{{ site.baseurl }}/detailpagina/checkout/bedankt.html">
-                                <img src="{{ site.baseurl }}/img/mastercard.png" alt="Master Card" height="25px">
-                        </a>
-                        <br>
-                        <a href="{{ site.baseurl }}/detailpagina/checkout/bedankt.html">
-                                <img src="{{ site.baseurl }}/img/mistercash.png" alt="Mister Cash" height="25px">
-                        </a>
-                        <br>
-                        <a href="{{ site.baseurl }}/detailpagina/checkout/bedankt.html">
-                                <img src="{{ site.baseurl }}/img/maestro.png" alt="Maestro" height="25px">
-                        </a>
-                </div>
-        </div>
 
 </div>

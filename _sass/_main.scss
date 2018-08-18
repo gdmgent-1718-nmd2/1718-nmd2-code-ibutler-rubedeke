@@ -59,6 +59,7 @@ a:hover {
     text-align: center;
     color: #FFF;
     text-shadow: 2px 2px #000;
+    font-size: 14pt;
   }
 
 /* ==============================================
@@ -143,4 +144,34 @@ a:hover {
     border: none;
     border-radius: 0;
     font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 10px;
   }
+
+/* ==============================================
+   CHECKOUT
+============================================== */
+
+.breadcrumb {
+ background-color: #EAB818;
+ font-family: 'Luckiest Guy', cursive;
+}
+
+.breadcrumb-active {
+  color: #FFF;
+  text-shadow: 2px 2px #000;
+}
+
+.form-check-input {
+  margin: 5px 10px 0 0; 
+}
+
+.payments {
+  background-color: #fff;
+  color: #000;
+  padding: 30px 20px 30px 20px;
+}
+
+.blacktext {
+  color: #000;
+  text-shadow: none;
+}
