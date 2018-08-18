@@ -15,6 +15,10 @@ $primary: $indigo;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.google.com/specimen/Luckiest+Guy');
 
-$font-family-base: Merriweather, serif;
+$font-family-base: 'Luckiest Guy', cursive;
+
+@import url('https://fonts.google.com/specimen/Open+Sans+Condensed:300,700');
+
+$font-family-base: 'Open Sans Condensed', sans-serif;

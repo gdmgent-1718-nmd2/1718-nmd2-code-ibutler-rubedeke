@@ -1,5 +1,7 @@
 - title: HOME
   url: /index.html
+- title: DETAILS
+  url: /detailpagina/product.html
 - title: ABOUT
   url: /overons.html 
 - title: CONTACT
